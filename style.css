@@ -1,0 +1,102 @@
+
+body, h1, h2, p, label, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: rgb(0,36,36);
+    background: radial-gradient(circle, rgba(0,36,36,1) 0%, rgba(9,121,28,1) 39%, rgba(0,95,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#songForm {
+    max-width: 400px;
+    margin: 140px auto;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 20px;
+    border-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 4px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+#songListContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.song-item {
+    margin-bottom: 10px; 
+}
+
+.music-top {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #00c3ff;
+    border-radius: 5px;
+    background-color: #008cff;
+    width: 35%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #songForm {
+        max-width: 100%;
+    }
+
+    #songListContainer {
+        max-width: 100%;
+    }
+}
